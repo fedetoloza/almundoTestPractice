@@ -4,7 +4,7 @@ import base.BaseTests;
 import org.testng.annotations.Test;
 import pages.HotelsPage;
 import pages.AssistancesPage;
-import pages.VuelosPage;
+import pages.FlightsPage;
 
 import static org.testng.Assert.assertEquals;
 
@@ -19,9 +19,9 @@ public class NavigationTests extends BaseTests {
 
     @Test
     public void TestVuelosNavPage() throws InterruptedException{
-        VuelosPage vuelosPage = homepage.clickVuelos();
+        FlightsPage flightsPage = homepage.clickVuelos();
         Thread.sleep(2000);
-        assertEquals(vuelosPage.getTitle(),"Encontrá los mejores vuelos con reserva flexible.", "Error pestaña incorrecta");
+        assertEquals(flightsPage.getTitle(),"Encontrá los mejores vuelos con reserva flexible.", "Error pestaña incorrecta");
     }
 
     @Test

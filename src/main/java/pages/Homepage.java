@@ -15,9 +15,9 @@ public class Homepage {
         return new HotelsPage(driver);
     }
 
-    public VuelosPage clickVuelos(){
+    public FlightsPage clickVuelos(){
         clickLink("//li[@data-au=\"tab-flights\"]");
-        return new VuelosPage(driver);
+        return new FlightsPage(driver);
     }
 
     public AssistancesPage clickSeguros() {
